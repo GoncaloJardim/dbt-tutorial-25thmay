@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: dbt_goncalojardim
+    config:
+      enabled: true
+    tables:
+      - name: superstore-orders
+      - name: superstore-table
+
+  - name: jaffer
+    config:
+      enabled: true
+    tables:
+      - name: customers
+      - name: stg_customers
+      - name: stg_orders
